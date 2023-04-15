@@ -3,7 +3,7 @@ import StatCardWrapper from "../assets/wrappers/StatCardWrapper";
 
 const StatCard: React.FC<CardData> = ({ totalUpdates, name, details = [] }) => {
   return (
-    <StatCardWrapper>
+    <StatCardWrapper className='card-wrapper'>
       <p className='card-title'>{name}</p>
       <div className='card-main'>
         <div className='card-center'>
