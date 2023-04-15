@@ -1,5 +1,6 @@
 import { useState } from "react";
 import LinearChart from "./LinearChart";
+import ChartWrapper from "../assets/wrappers/ChartFooter";
 
 const options = [
   { id: 1, name: "Daily" },
@@ -10,7 +11,7 @@ const options = [
 const Chart: React.FC = () => {
   const [selected, useSelected] = useState("Daily");
   return (
-    <section className='chart-section-container'>
+    <ChartWrapper>
       <div className='chart-option-wrapper'>
         {options.map((option) => {
           return (
@@ -27,7 +28,7 @@ const Chart: React.FC = () => {
         })}
       </div>
       <LinearChart />
-    </section>
+    </ChartWrapper>
   );
 };
 

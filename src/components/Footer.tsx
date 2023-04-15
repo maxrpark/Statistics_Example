@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { footerLinks, socialLink } from "../utils/links";
+import Wrapper from "../assets/wrappers/FooterWrapper";
 
 const Footer: React.FC = () => {
   return (
-    <footer>
+    <Wrapper>
       <nav className='nav-footer'>
         <ul className='nav-footer-links section-center'>
           {footerLinks.map((item) => {
@@ -37,7 +38,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </Wrapper>
   );
 };
 

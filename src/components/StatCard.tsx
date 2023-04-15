@@ -1,8 +1,9 @@
 import { CardData } from "../utils/statsData";
+import StatCardWrapper from "../assets/wrappers/StatCardWrapper";
 
 const StatCard: React.FC<CardData> = ({ totalUpdates, name, details = [] }) => {
   return (
-    <div className='card-wrapper'>
+    <StatCardWrapper>
       <p className='card-title'>{name}</p>
       <div className='card-main'>
         <div className='card-center'>
@@ -20,7 +21,7 @@ const StatCard: React.FC<CardData> = ({ totalUpdates, name, details = [] }) => {
           })}
         </div>
       </div>
-    </div>
+    </StatCardWrapper>
   );
 };
 

@@ -1,9 +1,10 @@
 import Logo from "./icons/Logo";
 import { navLinks } from "../utils/links";
 import { NavLink } from "react-router-dom";
+import HeaderWrapper from "../assets/wrappers/HeaderWrapper";
 const Header: React.FC = () => {
   return (
-    <header>
+    <HeaderWrapper>
       <div className='top-navbar section-center'>
         <Logo />
         <ul className='top-nav-links'>
@@ -23,7 +24,7 @@ const Header: React.FC = () => {
           })}
         </ul>
       </nav>
-    </header>
+    </HeaderWrapper>
   );
 };
 
